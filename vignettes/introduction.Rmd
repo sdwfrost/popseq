@@ -1,0 +1,25 @@
+---
+title: "Introduction to popseq"
+author: "Simon Frost"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{introduction}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+library(popseq)
+```
+
+WGS isolated from throat swab of a naturally infected individual.
+
+```
+fastq-dump --outdir fastq --gzip --skip-technical  --readids --dumpbase --split-files --clip SRR4309538
+```
+
+```{r}
+
+```
+

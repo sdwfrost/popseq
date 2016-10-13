@@ -1,0 +1,14 @@
+---
+title: "popseq"
+author: "Simon Frost"
+date: "11 October 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## popseq
+
+This package is intended to cover functionality from other programs such as [samfire] and [popbam].
