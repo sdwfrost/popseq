@@ -3,6 +3,7 @@
 export(bamToFasta)
 export(ehhR)
 export(ehhsR)
+export(flogliksingle)
 export(ldR)
 export(nucdivR)
 export(pileupFreq)
