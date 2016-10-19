@@ -66,6 +66,11 @@ fnqtilde=function(frequencyvec,hammingmatrix,e){
 #' flogliksingle(c(0,1,1,1,1,1),freq,1/3*10^(-5),1)
 #' library(minqa)
 #' bobyqa(c(.1,.1,.1,.1,.1,.1),flogliksingle,upper=Inf,lower=0,freqMatrix=freq,rate=1/3*10^(-5),pos=1)
+#'
+#' @author Fei Xiang (\email{xf3087@@gmail.com})
+#'
+#' @export
+#'
 flogliksingle=function(parr,freqMatrix,rate,pos){
   ###freqmatrix is the frequency matrix;###
   ###rate is the mutation rate;############
