@@ -5,7 +5,7 @@ Authors@R: c(person("Simon", "Frost", email = "sdwfrost@gmail.com", role = c("au
 Description: This package aims to provide functions for the analysis and visualisation of deep sequencing data.
 Repository: CRAN, BioCsoft
 Depends: R (>= 3.3.1)
-Imports: GenomicAlignments, Biostrings, VariantAnnotation, Rsamtools, plyr, e1071
+Imports: GenomicAlignments, Biostrings, VariantAnnotation, Rsamtools, plyr, e1071, stringdist
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
