@@ -1,10 +1,10 @@
 Package: popseq
 Title: Population Analysis of Deep Sequencing Data
-Version: 0.0.0.1
+Version: 0.0.1
 Authors@R: c(person("Simon", "Frost", email = "sdwfrost@gmail.com", role = c("aut", "cre")), person("Fei", "Xiang", email = "xf3087@gmail.com", role = c("aut")))
 Description: This package aims to provide functions for the analysis and visualisation of deep sequencing data.
 Repository: CRAN, BioCsoft
-Depends: R (>= 3.3.1)
+Depends: R (>= 3.3.0)
 Imports: GenomicAlignments, Biostrings, VariantAnnotation, Rsamtools, plyr, e1071, stringdist
 License: MIT + file LICENSE
 Encoding: UTF-8
