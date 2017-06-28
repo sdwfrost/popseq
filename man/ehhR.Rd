@@ -26,4 +26,3 @@ ehhR(exmtx,4)
 \author{
 Fei Xiang (\email{xf3087@gmail.com})
 }
-

@@ -25,4 +25,3 @@ sfsR(3-exmtx)
 \author{
 Fei Xiang (\email{xf3087@gmail.com})
 }
-

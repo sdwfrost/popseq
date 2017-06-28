@@ -18,4 +18,3 @@ Nucleotide frequencies (as a data frame)
 \author{
 Simon Frost (\email{sdwfrost@gmail.com})
 }
-

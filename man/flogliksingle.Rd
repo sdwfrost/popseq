@@ -30,4 +30,3 @@ bobyqa(c(.1,.1,.1,.1,.1,.1),flogliksingle,upper=Inf,lower=0,freqMatrix=freq,rate
 \author{
 Fei Xiang (\email{xf3087@gmail.com})
 }
-

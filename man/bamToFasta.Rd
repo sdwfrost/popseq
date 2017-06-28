@@ -19,4 +19,3 @@ bamToFasta(bf, fn, region = NULL)
 \author{
 Simon Frost (\email{sdwfrost@gmail.com})
 }
-

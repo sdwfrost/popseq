@@ -27,4 +27,3 @@ nucdivR(exmtx,exmtx1)
 \author{
 Fei Xiang (\email{xf3087@gmail.com})
 }
-
