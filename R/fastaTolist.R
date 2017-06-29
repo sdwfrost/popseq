@@ -5,6 +5,8 @@ fastaTolist=function(fas_list,ref){
   #dna.list=lapply(fas_list,read.dna,format="fasta",as.character = T,as.matrix = T)
   dna.list=lapply(fas_list,read.alignment,format="fasta")
   dna.list=lapply(dna.list,as.matrix.alignment)
+
+
   frequency.list<-lapply(dna.list, function(x) {
     apply(x,2,function(y) table(factor(y, levels = c("a","c","g","t"))))
   })
@@ -27,7 +29,8 @@ fastaTolist=function(fas_list,ref){
   ##do.call(rbind,ordered.freq.list)
  #### output
   return(list(pstar=pstar,
-              freq.mat=do.call(rbind,ordered.freq.list),
+              freq.mat.ordered=do.call(rbind,ordered.freq.list),
+              freq.mat=do.call(rbind,frequency.list),
               cons=cons
   ))
 
