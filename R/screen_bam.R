@@ -1,8 +1,9 @@
 #' A function to identify sites of interestes from a list of longitudinal sequence file.
 #'
-#' @param file_list A list of fasta files.
+#' @param file_list A list of bam files.
 #' @param ref A referece sequence.
 #' @param priorPA Prior assocation to possible models
+#' @param region An optional region from the BAM file (as a \code{GRanges} object)
 #' @return PPA association for each site.
 #' @examples
 #' pig2.1=system.file("extdata/pig2.1",package = "popseq")
@@ -20,10 +21,10 @@
 #' @export
 
 
-#########an overall function to deal with a list of fasta files on selection#######
-screen_fasta=function(file_list,ref=NULL,priorPA=.001){
+#########an overall function to deal with a list of bam files on selection#######
+screen_bam=function(file_list,ref=NULL,region,priorPA=.001){
   #########seq from a list of fasta files######
-  seq.fas=fastaTolist(fas_list = file_list,ref=ref)
+  seq.fas=bamTolist(bam_list = file_list,ref=ref,region=region)
   pstar=seq.fas$pstar
   freq.mat=seq.fas$freq.mat.ordered
   cons=seq.fas$cons
@@ -42,10 +43,3 @@ screen_fasta=function(file_list,ref=NULL,priorPA=.001){
   return(output)
 
 }
-
-
-
-
-
-
-
