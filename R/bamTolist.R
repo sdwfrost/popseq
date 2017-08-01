@@ -1,7 +1,12 @@
 #########a function to convert a list of bam files in to a list by frequencies#######
 bamTolist=function(bam_list,ref,region){
   require(seqinr)
-  dna.ref=tolower(as.matrix.alignment(read.alignment(ref,format="fasta")))
+  #######read the full ref and select the region matching segment#######
+  whole.ref=read.alignment(ref,format="fasta")
+  piece=match(region@seqnames@values,whole.ref$nam)
+  dna.ref=strsplit(whole.ref$seq[[piece]],"")
+  dna.ref=matrix(unlist(dna.ref),nrow=1)
+  #dna.ref=tolower(as.matrix.alignment(read.alignment(ref,format="fasta")))
   segment.bam <- ScanBamParam(which=region)
 
 
