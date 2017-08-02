@@ -12,16 +12,16 @@
 #'p4305.d3=system.file("extdata/4305-d3.bam",package = "popseq")
 #'p4305.d4=system.file("extdata/4305-d4.bam",package = "popseq")
 #'p4305.d5=system.file("extdata/4305-d5.bam",package = "popseq")
-#'ref.seg1=system.file("extdata/seg1.fas",package = "popseq")
-#'ref.seg2=system.file("extdata/seg2.fas",package = "popseq")
+#'ref=system.file("extdata/A_England_195_2009.fa",package = "popseq")
+#'
 #'
 #'
 #'pigbam=list(p4305.d3,p4305.d4,p4305.d5)
 #'
 #'
-#'res1=screen_bam_eff(file_list=pigbam,ref=ref.seg1,region= GRanges("GQ166656_1",IRanges(1,2280)),priorPA=.001)
+#'res1=screen_bam_eff(file_list=pigbam,ref=ref,region= GRanges("GQ166656_1",IRanges(1,2280)),priorPA=.001)
 #'
-#'res2=screen_bam_eff(file_list=pigbam,ref=ref.seg2,priorPA=.001,region = GRanges("GQ166655_2",IRanges(1,2274)))
+#'res2=screen_bam_eff(file_list=pigbam,ref=ref,region = GRanges("GQ166655_2",IRanges(1,2274)),priorPA=.001)
 #'
 #'
 #'
